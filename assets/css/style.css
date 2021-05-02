@@ -723,6 +723,75 @@ footer .bottom p a {
 
 /* responsive mobile */
 @media (max-width: 575.98px) {
+	section,
+	header,
+	footer {
+		width: calc(100% - 2rem);
+	}
+
+	.covid_case_info,
+	.bacaan_artikel,
+	.informasi_artikel,
+	.infografik_artikel,
+	.fakta_artikel,
+	.pranala_penting .link_group,
+	.ikuti_kami .sosmed,
+	footer .top {
+		grid-template-columns: 1fr;
+	}
+	.bacaan_pilihan .header,
+	.informasi_terkini .header,
+	.infografik_terbaru .header,
+	.periksa_fakta .header {
+		display: block;
+	}
+
+	/* header */
+	.header_logo_and_menu ul {
+		display: none;
+	}
+	body > header > div.header_mode > span {
+		display: none;
+	}
+	/* header */
+
+	/* info covid indonesia */
+	.info_covid h1 {
+		font-size: 24px;
+	}
+	.covid_case_info h1 {
+		font-size: 44px;
+	}
+	/* info covid indonesia */
+
+	/* ikuti kami */
+	.ikuti_kami .sosmed {
+		row-gap: 1rem;
+	}
+	/* ikuti kami */
+
+	/* footer */
+	footer .top {
+		place-items: start;
+		row-gap: 1rem;
+	}
+	body > footer > div.top > div.sosmed > a:nth-child(1) > i {
+		margin-left: 0;
+	}
+	footer .top .support div a {
+		margin-left: 0;
+	}
+	footer .top .support {
+		align-items: flex-start;
+	}
+	footer .top .support div {
+		display: block;
+	}
+	footer .bottom p {
+		text-align: left;
+	}
+	/* footer */
+
 	/* profile */
 	.profile_container h1 {
 		font-size: 21px;
